@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::Base
+class ApplicationsController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
@@ -7,12 +7,11 @@ class ApplicationController < ActionController::Base
   def create
     @application = Application.new(application_params)
 
-    if @application.save!
-      sign_in(user)
-      redirect_to "/static_pages/thanks.html.erb"
+    if @application.save
+      redirect_to "/static_pages/thanks"
     else
-      flash.now[:errors] = @application.errors.full_messages
-      redirect_to "/static_pages/apply.html.erb"
+      flash[:errors] = @application.errors.full_messages
+      redirect_to "/static_pages/apply"
     end
 
 

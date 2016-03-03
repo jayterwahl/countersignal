@@ -1,0 +1,172 @@
+<h1> Apply now </h1>
+
+
+
+<br>
+
+
+
+<div class="apply_form" >
+
+  <form action="/application" method="post">
+
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+
+
+    First Name
+    <input type="text" name="application[first_name]">
+    <br>
+    Last Name
+    <input type="text" name="application[last_name]">
+    <br>
+    Email Address
+    <input type="text" name="application[email]">
+    <br>
+    Phone Number
+    <input type="text" name="application[phone_number]">
+    <br>
+    Skype Handle
+    <input type="text" name="application[skype_handle]">
+    <br>
+
+    <input type="hidden" name="application[session_date]" value ="01/11/2011">
+    <br>
+
+
+    <h3>Portfolio</h3>
+    <br>
+
+    Github
+    <input type="text" name="application[github_username]">
+    <br>
+    Linkedin Profile
+    <input type="text" name="application[linkedin_profile]">
+    <br>
+    Personal Website
+    <input type="text" name="application[personal_website]">
+    <br>
+
+
+    <h3>Education </h3>
+    <br>
+    Undergraduate Degree?
+    <input type="text" name="application[undergraduate]">
+    <br>
+    Graduate Degree?
+    <input type="text" name="application[graduate]">
+    <br>
+
+
+    <h3> Prior training and programming experience:</h3>
+    <br>
+    Java Experience
+    <input type="checkbox" name="application[java_experience]">
+    <br>
+    Go Experience
+    <input type="checkbox" name="application[go_experience]">
+    <br>
+    R Experience
+    <input type="checkbox" name="application[r_experience]">
+    <br>
+    Python Experience
+    <input type="checkbox" name="application[python_experience]">
+    <br>
+    Another Programming Language
+    <input type="checkbox" name="application[other_experience]">
+    <br>
+
+    What is your level of familiarity with Python?
+
+    <select name="application[much_python_experience]">
+      <option value="No Experience" selected>I have never used Python</option>
+      <option value="Little Experience">I've dabbled</option>
+      <option value="Python Experience">I code in Python</option>
+      <option value="Python Pro!">I code in Python at a professional level</option>
+    </select>
+
+    <br>
+
+    <h3> College-Level coursework </h3>
+    <br>
+
+    Statistics
+    <input type="checkbox" name="application[stats_history]">
+    <br>
+    Math
+    <input type="checkbox" name="application[math_history]">
+    <br>
+    Algebra
+    <input type="checkbox" name="application[algebra_history]">
+    <br>
+    Computer Science
+    <input type="checkbox" name="application[cs_history]">
+    <br>
+
+
+  <h3>Essay Portion </h3>
+  <br>
+  Short Answer 1
+  <br>
+  <textarea style="width: 650px; height: 50px" name="application[short_answer_1]"></textarea>
+  <br>
+  Short Answer 2
+  <br>
+  <textarea style="width: 650px; height: 50px" name="application[short_answer_2]"></textarea>
+  <br>
+  Short Answer 3
+  <br><textarea style="width: 650px; height: 50px" name="application[short_answer_3]"></textarea>
+  <br>
+  Short Answer 4
+  <br><textarea style="width: 650px; height: 50px" name="application[short_answer_4]"></textarea>
+  <br>
+  Short Answer 5
+  <br><textarea style="width: 650px; height: 50px" name="application[short_answer_5]"></textarea>
+  <br>
+
+
+  <h1> Recruitment Data </h1>
+
+  How did you hear about countersignal?
+
+  <select name="application[recruitment_1]">
+    <option value="Signal employee" selected>Signal employee</option>
+    <option value="Friend or family member">Friend or family member</option>
+    <option value="Advertisement">Advertisement</option>
+    <option value="Tech event">Tech event</option>
+  </select>
+
+  <br>
+
+  If you were referred, please write the name of who referred you. Otherwise, put N/A.
+
+  <input type="text" name="application[recruitment_2]">
+
+  <br>
+
+
+  Are you legally allowed to work in the U.S.?
+
+  <select name="application[recruitment_3]">
+    <option value="Yes" selected>Yes</option>
+    <option value="No">No</option>
+  </select>
+
+  <br>
+
+  Do you currently live in the U.S.?
+
+  <select name="application[recruitment_4]">
+    <option value="Yes" selected>Yes</option>
+    <option value="No" >No</option>
+  </select>
+
+  <br>
+
+
+
+
+    <input type="submit" value ="Submit!">
+
+  </form>
+
+</div>
